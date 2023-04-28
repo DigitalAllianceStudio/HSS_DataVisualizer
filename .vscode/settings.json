@@ -1,0 +1,15 @@
+{
+    "git-graph.fileEncoding": "utf8",
+    "[markdown]": {
+        "editor.wordWrap": "off",
+        "editor.quickSuggestions": {
+            "comments": "on",
+            "strings": "on",
+            "other": "on"
+        },
+        "files.encoding": "utf8"
+    },
+    "files.associations": {
+        "*.HSSDVProj": "ini"
+    }
+}
