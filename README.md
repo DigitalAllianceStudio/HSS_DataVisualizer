@@ -14,6 +14,12 @@
 
 </div>
 
+### :spiral_notepad: CSV 文件导出
+
+> 将导出后的 `.csv` 文件通过 Excel 另存为 `.xlsx` 格式后，进行图表分析
+
+![ExportCSVReport](doc/ExportCSVReport.png)
+
 ## :gear: 环境
 
 - Qt 5.15.2 MSVC 2019 (x86 or x64)
