@@ -33,7 +33,7 @@
 <tr>
 <td colspan="2" style = "text-align: center; font-size: 2em; font-weight: bold;">
 
-## :warning: 注意事项
+:warning: 注意事项
 
 </td>
 </tr>
