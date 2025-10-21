@@ -9,6 +9,8 @@
 <tr>
 <td style = "width: 30%;">
 
+![GIF1](doc/GIF1.gif)
+
 ## :book: 简介
 
 本仓库用于 HSS_DataVisualizer 的发布，下载请跳转 [发布页面 (当前版本: v0.0.2.1)](https://github.com/DigitalAllianceStudio/HSS_DataVisualizer/releases)
@@ -51,7 +53,6 @@
 
 <div align="center">
 
-![GIF1](doc/GIF1.gif)
 ![ProgramScreenshot0](doc/ProgramScreenshot0.png)
 ![ProgramScreenshot1](doc/ProgramScreenshot1.png)
 ![ProgramScreenshot2](doc/ProgramScreenshot2.png)
