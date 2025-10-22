@@ -13,7 +13,7 @@
 
 ## :book: 简介
 
-本仓库用于 HSS_DataVisualizer 的发布，下载请跳转 [发布页面 (当前版本: v0.0.2.1)](https://github.com/DigitalAllianceStudio/HSS_DataVisualizer/releases)
+本仓库用于 HSS_DataVisualizer 的发布，下载请跳转 [发布页面 (当前版本: v0.0.2.2)](https://github.com/DigitalAllianceStudio/HSS_DataVisualizer/releases)
 
 本程序通过 SEGGER High-Speed-Sampling (HSS) 方式，对 MCU RAM 中的全局变量进行非侵入式的后台高速访问，并实时将波形和数据可视化到用户界面，其原理类似于 J-Scope、STM Studio、STM32CubeMonitor。
 
@@ -53,6 +53,8 @@
 
 <div align="center">
 
+![ProgramScreenshot5](doc/ProgramScreenshot5.png)
+![ProgramScreenshot6](doc/ProgramScreenshot6.png)
 ![ProgramScreenshot4](doc/ProgramScreenshot4.png)
 ![ProgramScreenshot0](doc/ProgramScreenshot0.png)
 ![ProgramScreenshot1](doc/ProgramScreenshot1.png)
