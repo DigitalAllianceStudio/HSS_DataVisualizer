@@ -53,6 +53,7 @@
 
 <div align="center">
 
+![ProgramScreenshot4](doc/ProgramScreenshot4.png)
 ![ProgramScreenshot0](doc/ProgramScreenshot0.png)
 ![ProgramScreenshot1](doc/ProgramScreenshot1.png)
 ![ProgramScreenshot2](doc/ProgramScreenshot2.png)
