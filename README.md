@@ -13,14 +13,16 @@
 
 ## :book: 简介
 
-本仓库用于 HSS_DataVisualizer 的发布，下载请跳转 [发布页面 (当前版本: v0.0.2.2)](https://github.com/DigitalAllianceStudio/HSS_DataVisualizer/releases)
+> [!NOTE]
+> 本仓库用于 HSS_DataVisualizer 的发布，下载请跳转 [发布页面 (当前版本: v0.0.2.2)](https://github.com/DigitalAllianceStudio/HSS_DataVisualizer/releases)
 
 本程序通过 SEGGER High-Speed-Sampling (HSS) 方式，对 MCU RAM 中的全局变量进行非侵入式的后台高速访问，并实时将波形和数据可视化到用户界面，其原理类似于 J-Scope、STM Studio、STM32CubeMonitor。
 
 </td>
 <td style = "width: 70%;">
 
-### 本工具是JScope的平替，相比JScope，本工具支持和新增的功能
+> [!TIP]
+> 本工具是JScope的平替，相比JScope，本工具支持和新增的功能：
 
 1. 变量别名设定
 2. 变量`公式计算`实时显示（支持 `Javascript Math` 表达式、移位等操作）
@@ -35,7 +37,8 @@
 <tr>
 <td colspan="2" style = "text-align: center; font-size: 2em; font-weight: bold;">
 
-:warning: 注意事项
+> [!IMPORTANT]
+> 注意事项
 
 </td>
 </tr>
