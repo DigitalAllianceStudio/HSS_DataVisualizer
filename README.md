@@ -14,7 +14,7 @@
 ## :book: 简介
 
 > [!NOTE]
-> 本仓库用于 HSS_DataVisualizer & UNI_DataVisualizer 的发布，下载请跳转 [发布页面 (当前版本: v0.0.2.7)](https://github.com/DigitalAllianceStudio/HSS_DataVisualizer/releases)
+> 本仓库用于 HSS_DataVisualizer & UNI_DataVisualizer 的发布，下载请跳转 [发布页面 (当前版本: v0.0.2.8)](https://github.com/DigitalAllianceStudio/HSS_DataVisualizer/releases/latest)
 
 `HSS_DataVisualizer` 通过 SEGGER High-Speed-Sampling (HSS) 方式，`UNI_DataVisualizer` 通过 SWD/JTAG 直读方式，对 MCU RAM 中的全局变量进行非侵入式的后台高速访问，并实时将波形和数据可视化到用户界面，其原理类似于 J-Scope、STM Studio、STM32CubeMonitor。
 
@@ -80,6 +80,13 @@
 ![ProgramScreenshot1](doc/ProgramScreenshot1.png)
 ![ProgramScreenshot2](doc/ProgramScreenshot2.png)
 ![ProgramScreenshot3](doc/ProgramScreenshot3.png)
+
+### 主题风格
+
+![主题1](doc/主题1.png)
+![主题2](doc/主题2.png)
+![主题3](doc/主题3.png)
+![主题4](doc/主题4.png)
 
 ### 采样数据导出 CSV
 
