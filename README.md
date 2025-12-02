@@ -5,7 +5,7 @@
 :beers: HSS_DataVisualizer & UNI_DataVisualizer <a title="Hits" target="_blank" href="https://github.com/DigitalAllianceStudio/HSS_DataVisualizer"><img src="https://hits.b3log.org/DigitalAllianceStudio/HSS_DataVisualizer.svg"></a>
 
 > [!NOTE]
-> 本仓库用于 HSS_DataVisualizer & UNI_DataVisualizer 的发布，下载请跳转 [发布页面 (当前版本: v0.0.3.2)](https://github.com/DigitalAllianceStudio/HSS_DataVisualizer/releases/latest)
+> 本仓库用于 HSS_DataVisualizer & UNI_DataVisualizer 的发布，下载请跳转 [发布页面 (当前版本: v0.0.3.4)](https://github.com/DigitalAllianceStudio/HSS_DataVisualizer/releases/latest)
 
 > [!TIP]
 > :question: 使用 Texas Instruments 的芯片（例如 `TMS320F28035` 以及国产1:1替代芯片例如湖南进芯的DSP，例如 `ADP32F035`，以及 `MSP430` 等...）和 `XDS100v3`、`XDS110`、`XDS560v2 Plus` 等调试器？
@@ -28,6 +28,8 @@
 </td>
 <td style = "width: 70%;">
 
+![ProgramScreenshot8](doc/ProgramScreenshot8.png)
+
 > [!TIP]
 > 本工具是 J-Scope 的平替，相比 J-Scope，本工具支持和新增的功能：
 
@@ -37,7 +39,7 @@
 4. 新增观测的同时`修改变量的功能`
 5. 更棒的变量增删改查、采样使能、波形使能体验
 6. 更便利和高清的示波图操作（模式有`扫描模式`、`滚动模式`：支持滚动、缩放、平移、游标测量等操作）
-7. 支持 2D 示波图、3D 示波图
+7. 支持 2D 示波图、3D 示波图、3D 图形
 8. 支持`采样数据导出 CSV`
 9. 以附加模式连接（不复位芯片）
 
@@ -81,6 +83,7 @@
 
 ### 软件截图
 
+![ProgramScreenshot8](doc/ProgramScreenshot8.png)
 ![ProgramScreenshot5](doc/ProgramScreenshot5.png)
 ![ProgramScreenshot6](doc/ProgramScreenshot6.png)
 ![ProgramScreenshot4](doc/ProgramScreenshot4.png)
