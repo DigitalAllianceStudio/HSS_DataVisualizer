@@ -19,6 +19,7 @@
 <tr>
 <td style = "width: 30%;">
 
+![ProgramScreenshot10](doc/ProgramScreenshot10.png)
 ![ProgramScreenshot7](doc/ProgramScreenshot7.png)
 
 ## :book: 简介
@@ -83,6 +84,7 @@
 
 ### 软件截图
 
+![ProgramScreenshot10](doc/ProgramScreenshot10.png)
 ![ProgramScreenshot8](doc/ProgramScreenshot8.png)
 ![ProgramScreenshot5](doc/ProgramScreenshot5.png)
 ![ProgramScreenshot6](doc/ProgramScreenshot6.png)
