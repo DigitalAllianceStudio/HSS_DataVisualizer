@@ -5,7 +5,7 @@
 :beers: HSS_DataVisualizer & UNI_DataVisualizer <a title="Hits" target="_blank" href="https://github.com/DigitalAllianceStudio/HSS_DataVisualizer"><img src="https://hits.b3log.org/DigitalAllianceStudio/HSS_DataVisualizer.svg"></a>
 
 > [!NOTE]
-> 本仓库用于 HSS_DataVisualizer & UNI_DataVisualizer 的发布，下载请跳转 [发布页面 (当前版本: v0.0.3.5)](https://github.com/DigitalAllianceStudio/HSS_DataVisualizer/releases/latest)
+> 本仓库用于 HSS_DataVisualizer & UNI_DataVisualizer 的发布，下载请跳转 [发布页面 (当前版本: v0.0.3.6)](https://github.com/DigitalAllianceStudio/HSS_DataVisualizer/releases/latest)
 
 > [!TIP]
 > :question: 使用 Texas Instruments 的芯片（例如 `TMS320F28035` 以及国产1:1替代芯片例如湖南进芯的DSP，例如 `ADP32F035`，以及 `MSP430` 等...）和 `XDS100v3`、`XDS110`、`XDS560v2 Plus` 等调试器？
@@ -86,10 +86,6 @@
 
 ![ProgramScreenshot10](doc/ProgramScreenshot10.png)
 ![ProgramScreenshot8](doc/ProgramScreenshot8.png)
-![ProgramScreenshot5](doc/ProgramScreenshot5.png)
-![ProgramScreenshot6](doc/ProgramScreenshot6.png)
-![ProgramScreenshot4](doc/ProgramScreenshot4.png)
-![ProgramScreenshot0](doc/ProgramScreenshot0.png)
 ![ProgramScreenshot1](doc/ProgramScreenshot1.png)
 ![ProgramScreenshot2](doc/ProgramScreenshot2.png)
 ![ProgramScreenshot3](doc/ProgramScreenshot3.png)
