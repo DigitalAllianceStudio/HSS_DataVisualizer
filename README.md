@@ -7,6 +7,13 @@
 > [!NOTE]
 > 本仓库用于 HSS_DataVisualizer & UNI_DataVisualizer 的发布， 当前版本: **v0.0.4.0**，下载请跳转程序发布页面 [github](https://github.com/DigitalAllianceStudio/HSS_DataVisualizer/releases/latest) 或 [gitee](https://gitee.com/tomystark/DataVisualizer-Release/releases/latest)
 
+> [!NOTE]
+> RTT 模式下，目标 MCU 端 RTT 库的移植和使用请参考该工程：[https://github.com/SummerFalls/F031K6T6_TestProj](https://github.com/SummerFalls/F031K6T6_TestProj)
+>
+> 其它参考资料：
+> 1. [RTT: Instrumenting an application to use it with J-Scope](https://kb.segger.com/UM08028_J-Scope#RTT:_Instrumenting_an_application_to_use_it_with_J-Scope)
+> 2. [SEGGER's Real Time Transfer (RTT)](https://kb.segger.com/RTT)
+
 > [!TIP]
 > :question: 使用 Texas Instruments 的芯片（例如 `TMS320F28035` 以及国产1:1替代芯片例如湖南进芯的DSP，例如 `ADP32F035`，以及 `MSP430` 等...）和 `XDS100v3`、`XDS110`、`XDS560v2 Plus` 等调试器？
 >
@@ -24,7 +31,7 @@
 
 ## :book: 简介
 
-`HSS_DataVisualizer` 通过 SEGGER High-Speed-Sampling (HSS) 方式，`UNI_DataVisualizer` 通过 SWD/JTAG 直读方式，对 MCU RAM 中的全局变量进行非侵入式的后台高速访问，并实时将波形和数据可视化到用户界面，其原理类似于 J-Scope、STM Studio、STM32CubeMonitor。
+本工具套件发布包内涵 2 个工具：`HSS_DataVisualizer` 和 `UNI_DataVisualizer`，均支持 High-Speed-Sampling (HSS) 和 Real-Time-Transfer (RTT) 模式，通过 SWD/JTAG 接口，对 MCU RAM 中的全局变量进行非侵入式的后台高速访问，并实时将波形和数据可视化到用户界面，其原理类似于 J-Scope、STM Studio、STM32CubeMonitor。
 
 </td>
 <td style = "width: 70%;">
@@ -32,7 +39,7 @@
 ![ProgramScreenshot8](doc/ProgramScreenshot8.png)
 
 > [!TIP]
-> 本工具是 J-Scope 的平替，相比 J-Scope，本工具支持和新增的功能：
+> 本工具是 J-Scope 的完美平替，相比 J-Scope，本工具支持和新增的功能：
 
 1. 变量别名设定
 2. 变量`公式计算`实时显示（支持 `Javascript Math` 表达式、移位等操作）
