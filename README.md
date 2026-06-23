@@ -4,8 +4,10 @@
 
 :beers: HSS_DataVisualizer & UNI_DataVisualizer <a title="Hits" target="_blank" href="https://github.com/DigitalAllianceStudio/HSS_DataVisualizer"><img src="https://hits.b3log.org/DigitalAllianceStudio/HSS_DataVisualizer.svg"></a>
 
+![专业版03](doc/专业版03.png)
+
 > [!NOTE]
-> 本仓库用于 HSS_DataVisualizer & UNI_DataVisualizer 的发布， 当前版本: **v0.0.4.0**，下载请跳转程序发布页面 [github](https://github.com/DigitalAllianceStudio/HSS_DataVisualizer/releases/latest) 或 [gitee](https://gitee.com/tomystark/DataVisualizer-Release/releases/latest)
+> 本仓库用于 HSS_DataVisualizer & UNI_DataVisualizer 的发布， 当前版本: **v0.1.0.0**，下载请跳转程序发布页面 [github](https://github.com/DigitalAllianceStudio/HSS_DataVisualizer/releases/latest) 或 [gitee](https://gitee.com/tomystark/DataVisualizer-Release/releases/latest)
 
 > [!NOTE]
 > RTT 模式下，目标 MCU 端 RTT 库的移植和使用请参考该工程：[https://github.com/SummerFalls/F031K6T6_TestProj](https://github.com/SummerFalls/F031K6T6_TestProj)
@@ -89,20 +91,20 @@
 
 <div align="center">
 
-### 软件截图
+### 软件截图 - 专业版
 
+![专业版01](doc/专业版01.png)
+![专业版02](doc/专业版02.png)
+
+### 软件截图 - 标准版
+
+![标准版01](doc/标准版01.png)
+![标准版02](doc/标准版02.png)
 ![ProgramScreenshot10](doc/ProgramScreenshot10.png)
 ![ProgramScreenshot8](doc/ProgramScreenshot8.png)
 ![ProgramScreenshot1](doc/ProgramScreenshot1.png)
 ![ProgramScreenshot2](doc/ProgramScreenshot2.png)
 ![ProgramScreenshot3](doc/ProgramScreenshot3.png)
-
-### 主题风格
-
-![主题1](doc/主题1.png)
-![主题2](doc/主题2.png)
-![主题3](doc/主题3.png)
-![主题4](doc/主题4.png)
 
 ### 采样数据导出 CSV
 
@@ -112,4 +114,4 @@
 
 ----------
 
-:star: Copyright © 2023 - 2025 Digital Alliance Studio. All rights reserved.
+:star: Copyright © 2023 - 2026 Digital Alliance Studio. All rights reserved.
