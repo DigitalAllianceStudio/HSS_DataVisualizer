@@ -5,8 +5,8 @@
 > :question: 使用 Texas Instruments 的芯片（例如 `TMS320F28035` 以及国产1:1替代芯片例如湖南进芯的DSP，例如 `ADP32F035`，以及 `MSP430` 等...）和 `XDS100v3`、`XDS110`、`XDS560v2 Plus` 等调试器？
 >
 > :bulb: 请使用 Texas Instruments 德州仪器芯片专用的非侵入式数据可视化实时示波工具：`DSS_DataVisualizer`
-> GitHub 仓库地址：[https://github.com/DigitalAllianceStudio/DSS_DataVisualizer](https://github.com/DigitalAllianceStudio/DSS_DataVisualizer)
-> Gitee  仓库地址：[https://gitee.com/tomystark/DSS_DataVisualizer-Release](https://gitee.com/tomystark/DSS_DataVisualizer-Release)
+> 1. GitHub 仓库地址：[https://github.com/DigitalAllianceStudio/DSS_DataVisualizer](https://github.com/DigitalAllianceStudio/DSS_DataVisualizer)
+> 2. Gitee  仓库地址：[https://gitee.com/tomystark/DSS_DataVisualizer-Release](https://gitee.com/tomystark/DSS_DataVisualizer-Release)
 
 <table style = "width: 100%;">
 <tr>
