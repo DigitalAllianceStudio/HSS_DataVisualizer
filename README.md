@@ -8,7 +8,7 @@
 ![专业版04](doc/专业版04.png)
 
 > [!NOTE]
-> 本仓库用于 HSS_DataVisualizer & UNI_DataVisualizer 的发布， 当前版本: **v0.2.2.0**，下载请跳转程序发布页面 [github](https://github.com/DigitalAllianceStudio/HSS_DataVisualizer/releases/latest) 或 [gitee](https://gitee.com/tomystark/DataVisualizer-Release/releases/latest)
+> 本仓库用于 HSS_DataVisualizer & UNI_DataVisualizer 的发布， 当前版本: **v1.0.0.0**，下载请跳转程序发布页面 [github](https://github.com/DigitalAllianceStudio/HSS_DataVisualizer/releases/latest) 或 [gitee](https://gitee.com/tomystark/DataVisualizer-Release/releases/latest)
 
 > [!NOTE]
 > RTT 模式下，目标 MCU 端 RTT 库的移植和使用请参考该工程：[https://github.com/SummerFalls/F031K6T6_TestProj](https://github.com/SummerFalls/F031K6T6_TestProj)
@@ -22,7 +22,7 @@
 >
 > :bulb: 请使用适用于 Texas Instruments 德州仪器芯片的非侵入式数据可视化实时示波工具：`DSS_DataVisualizer`，仓库地址：[https://github.com/DigitalAllianceStudio/DSS_DataVisualizer](https://github.com/DigitalAllianceStudio/DSS_DataVisualizer)
 
-![GIF1](doc/GIF1.gif)
+<!-- ![GIF1](doc/GIF1.gif) -->
 
 </td>
 </tr>
@@ -63,9 +63,38 @@
 > **注意事项：** :warning: 若运行报错（如`缺少动态链接库`），请安装 :package: `vcredist_x64.exe` 和 :package: `vc_redist.x64.exe` 运行库。
 
 > [!NOTE]
-> 本工具套件分为 2 个部分：
-> 1. HSS_DataVisualizer - SEGGER **J-Link** / **J-Trace** 专用数据可视化工具
-> 2. UNI_DataVisualizer - 通用数据可视化工具（支持 **DAP-Link** / **ST-Link V2** （固件版本 `v2.26` 及以上） / **ST-Link V3** （固件版本 `v3.2` 及以上） / **J-Link** / **Black Magic** / **FTDI** / **WCH-Link** / **CH347usbjtag** / **Glasgow Interface Explorer** 等调试器...）
+> 本工具套件分为 4 个可执行程序：
+> 1. HSS_DataVisualizer Std/Pro - SEGGER **J-Link** / **J-Trace** 专用数据可视化工具
+> 2. UNI_DataVisualizer Std/Pro - 通用数据可视化工具（支持 **DAP-Link** / **ST-Link V2** （固件版本 `v2.26` 及以上） / **ST-Link V3** （固件版本 `v3.2` 及以上） / **J-Link** / **Black Magic** / **FTDI** / **WCH-Link** / **CH347usbjtag** / **Glasgow Interface Explorer** 等调试器...）
+
+## 特性对比
+
+| 特性 | HSS_DataVisualizer Std | HSS_DataVisualizer Pro | UNI_DataVisualizer Std | UNI_DataVisualizer Pro |
+| --- | --- | --- | --- | --- |
+| 调试器支持 | J-Link / J-Trace 专版优化（`J-Trace Cortex-M PRO V2` RTT 模式最高采样率测试可达 `1.94 MB/s`：单帧10个变量无时间戳合计29字节，每秒采样 `70K` 次） | J-Link / J-Trace 专版优化（`J-Trace Cortex-M PRO V2` RTT 模式最高采样率测试可达 `1.94 MB/s`：单帧10个变量无时间戳合计29字节，每秒采样 `70K` 次） | DAP-Link / ST-Link V2/V3 / J-Link / Black Magic / FTDI / WCH-Link / CH347usbjtag / Glasgow 等 | DAP-Link / ST-Link V2/V3 / J-Link / Black Magic / FTDI / WCH-Link / CH347usbjtag / Glasgow 等 |
+| 采样模式 | HSS / RTT | HSS / RTT | HSS / RTT | HSS / RTT |
+| CSV 采样数据导出 - 实时落盘 | ✅ | ✅ | ✅ | ✅ |
+| CSV 采样数据导出 - 自定义导出路径 | ❌ （仅支持默认导出到桌面的 “采样数据导出” 文件夹） | ✅ | ❌ （仅支持默认导出到桌面的 “采样数据导出” 文件夹） | ✅ |
+| CSV 采样数据导出 - 自定义文件分割、编号 | ❌ （单次启用仅支持单文件导出） | ✅ （可自定义每多少行采样数据自动分割一次文件） | ❌ （单次启用仅支持单文件导出） | ✅ （可自定义每多少行采样数据自动分割一次文件） |
+| HSS 模式连接时自动重新解析变量 | ❌ | ✅ | ❌ | ✅ |
+| RTT 模式丢包特殊处理* | ✅ | ✅ | ✅ | ✅ |
+| 变量快捷搜索筛选 | ✅ | ✅ | ✅ | ✅ |
+| 变量在线修改 | ✅ | ✅ | ✅ | ✅ |
+| 独立的采样使能 | ✅ | ✅ | ✅ | ✅ |
+| 独立的波形使能 | ✅ | ✅ | ✅ | ✅ |
+| 变量别名 | ✅ | ✅ | ✅ | ✅ |
+| 变量公式计算（支持 Javascript Math 表达式） | ✅ | ✅ | ✅ | ✅ |
+| 最小值、最大值、滑动平均值 | ✅ | ✅ | ✅ | ✅ |
+| 2D 示波图 - 单图模式 | ✅ | ✅ | ✅ | ✅ |
+| 2D 示波图 - 多图模式 | ✅ | ✅ | ✅ | ✅ |
+| 2D 示波图 - 单 / 多图模式 - X/Y 游标测量 | ✅ | ✅ | ✅ | ✅ |
+| 2D 示波图 - 单 / 多图模式 - 滚动模式 | ✅ | ✅ | ✅ | ✅ |
+| 2D 示波图 - 单 / 多图模式 - 扫描模式 | ✅ | ✅ | ✅ | ✅ |
+| 3D 示波图 | ✅ | ✅ | ✅ | ✅ |
+| 3D 图形 | ✅ | ✅ | ✅ | ✅ |
+| 示波器主题切换 | ✅ | ✅ | ✅ | ✅ |
+| Ribbon Style | ❌ | ✅ | ❌ | ✅ |
+| 高级窗体停靠系统 | ❌ | ✅ | ❌ | ✅ |
 
 > [!IMPORTANT]
 > **HSS_DataVisualizer 注意事项：**
@@ -89,6 +118,24 @@
 </td>
 </tr>
 </table>
+
+## RTT 模式丢包特殊处理
+
+RTT 模式下MCU 高频发包时，对于低端 JLink 的丢包情况进行了特殊处理（这个处理 JScope 竟然没有做，见下图），比如 JLink OB、JLink V9 等低端 JLink，让MCU直接在主循环按最高频率写RTT缓冲，会有很多封包出错（JLink OB 测试了下 RTT 极限速度好像就是在 134 KB/s 不过这个速度已经比较容易产生错误数据），所谓特殊处理，其实指的就是如果发生丢字节的情况，为了防止数据错乱，失去对齐导致采样值出现极大值、极小值的问题，目前的策略是将丢了字节的那一包整包丢弃，如下图所示，被丢弃的数据点会被填充为0。特殊处理前后对比如下：
+
+### JScope 采样时发生丢包的波形界面截图
+
+> 可以看到很多极大值、极小值充斥了整个波形界面
+
+![JScope](doc/JScope.jpg)
+
+### RTT丢包特殊处理前
+
+![RTT丢包特殊处理前](doc/RTT丢包特殊处理前.png)
+
+### RTT丢包特殊处理后
+
+![RTT丢包特殊处理后](doc/RTT丢包特殊处理后.png)
 
 <div align="center">
 
