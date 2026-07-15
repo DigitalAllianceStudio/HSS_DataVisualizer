@@ -57,7 +57,9 @@ UNI_DataVisualizer Pro
 | HSS 模式连接时自动重新解析变量 | ❌ | ✅ | ❌ | ✅ | ❌ （半自动，若符号文件变化会弹窗询问） |
 | RTT 模式丢包特殊处理<sup>2</sup> | ✅ | ✅ | ✅ | ✅ | ❌ （丢包时数据出现极值，波形错乱充满示波区域，有迷惑性） |
 | 变量快捷搜索筛选 | ✅ | ✅ | ✅ | ✅ | ✅ （需要独立弹窗打开，较为不便） |
-| ELF/AXF 符号文件解析速度 | 快 | 快 | 快 | 快 | 慢 |
+| ELF/AXF/OUT 符号文件解析速度 | 超快 | 超快 | 超快 | 超快 | 慢 |
+| 符号文件编程语言支持 | C / C++ / Rust | C / C++ / Rust | C / C++ / Rust | C / C++ / Rust | C / C++ / Rust |
+| 符号文件工具链支持 | ARMCC / ARMCLANG / IAR / GCC / clang LLVM rustc | ARMCC / ARMCLANG / IAR / GCC / clang LLVM rustc | ARMCC / ARMCLANG / IAR / GCC / clang LLVM rustc | ARMCC / ARMCLANG / IAR / GCC / clang LLVM rustc | ARMCC / ARMCLANG / IAR / GCC / clang LLVM rustc |
 | 变量在线修改 | ✅ | ✅ | ✅ | ✅ | ❌ |
 | 波形触发功能 | ❌ | ❌ | ❌ | ❌ | ✅ |
 | 波形数据回放 | ❌ | ❌ | ❌ | ❌ | ✅ |
