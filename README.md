@@ -39,7 +39,7 @@
 </div>
 
 > [!NOTE]
-> 本仓库用于 HSS_DataVisualizer & UNI_DataVisualizer 的发布，当前版本：**v1.0.0.0**。下载请跳转程序发布页面 [GitHub](https://github.com/DigitalAllianceStudio/HSS_DataVisualizer/releases/latest) 或 [Gitee](https://gitee.com/tomystark/DataVisualizer-Release/releases/latest)。
+> 本仓库用于 HSS_DataVisualizer & UNI_DataVisualizer 的发布，当前版本：**v1.0.1.0**。下载请跳转程序发布页面 [GitHub](https://github.com/DigitalAllianceStudio/HSS_DataVisualizer/releases/latest) 或 [Gitee](https://gitee.com/tomystark/DataVisualizer-Release/releases/latest)。
 
 > [!TIP]
 > :question: 使用 Texas Instruments 的芯片（例如 `TMS320F28035` 以及国产 1:1 替代芯片，例如湖南进芯的 DSP `ADP32F035`，以及 `MSP430` 等...）和 `XDS100v3`、`XDS110`、`XDS560v2 Plus` 等调试器？
@@ -114,7 +114,7 @@
 | Ribbon Style | ❌ | ✅ | ❌ | ✅ | ❌ |
 | 高级窗体停靠系统 | ❌ | ✅ | ❌ | ✅ | ❌ |
 
-> <sup>①</sup> J-Link / J-Trace 专版优化：`J-Trace Cortex-M PRO V2` RTT 模式最高采样率实测可达 `1.94 MB/s`（单帧 10 个变量无时间戳合计 29 字节，每秒采样 `70K` 次）。
+> <sup>①</sup> J-Link / J-Trace 专版优化：`J-Trace Cortex-M PRO V2` RTT 模式最高采样率实测可达 `2.1 MB/s`（单帧 10 个变量无时间戳合计 29 字节，每秒采样 `74K` 次）。
 >
 > <sup>②</sup> 多调试器广泛支持：DAP-Link / ST-Link V2/V3 / J-Link / Black Magic / FTDI（Olimex ARM-USB 系列调试器）/ WCH-Link / CH347usbjtag / Glasgow Interface Explorer 等。
 
