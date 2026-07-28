@@ -7,7 +7,7 @@
 <p><i>High-Speed-Sampling (HSS) · Real-Time-Transfer (RTT) · 2D / 3D 实时示波</i></p>
 
 <p>
-  <img alt="version" src="https://img.shields.io/badge/version-v1.0.1.0-2ea44f?style=flat-square">
+  <img alt="version" src="https://img.shields.io/badge/version-v1.0.2.0-2ea44f?style=flat-square">
   <img alt="platform" src="https://img.shields.io/badge/platform-Windows%20x64-0078D6?style=flat-square&logo=windows&logoColor=white">
   <a title="Hits" target="_blank" href="https://github.com/DigitalAllianceStudio/HSS_DataVisualizer"><img alt="hits" src="https://hits.b3log.org/DigitalAllianceStudio/HSS_DataVisualizer.svg"></a>
 </p>
@@ -39,7 +39,7 @@
 </div>
 
 > [!NOTE]
-> 本仓库用于 HSS_DataVisualizer & UNI_DataVisualizer 的发布，当前版本：**v1.0.1.0**。下载请跳转程序发布页面 [GitHub](https://github.com/DigitalAllianceStudio/HSS_DataVisualizer/releases/latest) 或 [Gitee](https://gitee.com/tomystark/DataVisualizer-Release/releases/latest)。
+> 本仓库用于 HSS_DataVisualizer & UNI_DataVisualizer 的发布，当前版本：**v1.0.2.0**。下载请跳转程序发布页面 [GitHub](https://github.com/DigitalAllianceStudio/HSS_DataVisualizer/releases/latest) 或 [Gitee](https://gitee.com/tomystark/DataVisualizer-Release/releases/latest)。
 
 > [!TIP]
 > :question: 使用 Texas Instruments 的芯片（例如 `TMS320F28035` 以及国产 1:1 替代芯片，例如湖南进芯的 DSP `ADP32F035`，以及 `MSP430` 等...）和 `XDS100v3`、`XDS110`、`XDS560v2 Plus` 等调试器？
@@ -82,18 +82,23 @@
 
 | 特性 | HSS_DataVisualizer Std | HSS_DataVisualizer Pro | UNI_DataVisualizer Std | UNI_DataVisualizer Pro | J-Scope |
 | --- | :---: | :---: | :---: | :---: | :---: |
-| 调试器支持 | J-Link / J-Trace 专版优化<sup>①</sup> | J-Link / J-Trace 专版优化<sup>①</sup> | 多调试器广泛支持<sup>②</sup> | 多调试器广泛支持<sup>②</sup> | J-Link / J-Trace |
+| 调试器支持 | J-Link / J-Trace **专版优化**<sup>①</sup> | J-Link / J-Trace **专版优化**<sup>①</sup> | 多调试器**广泛**支持<sup>②</sup> | 多调试器**广泛**支持<sup>②</sup> | J-Link / J-Trace |
 | 采样模式<sup>1</sup> | HSS / RTT | HSS / RTT | HSS / RTT | HSS / RTT | HSS / RTT / **RTT-Plus** |
-| CSV 采样数据导出 - 实时落盘 | ✅ | ✅ | ✅ | ✅ | ❌ （必须停止采样才能导出） |
+| CSV 采样数据导出 - **实时落盘** | ✅ | ✅ | ✅ | ✅ | ❌ （必须停止采样才能导出） |
 | CSV 采样数据导出 - 自定义导出路径 | ❌ （仅默认导出到桌面 “采样数据导出” 文件夹） | ✅ | ❌ （仅默认导出到桌面 “采样数据导出” 文件夹） | ✅ | ✅ |
 | CSV 采样数据导出 - 自定义文件分割、编号 | ❌ （单次启用仅支持单文件导出） | ✅ （可自定义每多少行采样数据自动分割一次文件） | ❌ （单次启用仅支持单文件导出） | ✅ （可自定义每多少行采样数据自动分割一次文件） | ❌ |
 | HSS 模式连接时自动重新解析变量 | ❌ | ✅ | ❌ | ✅ | ❌ （半自动，若符号文件变化会弹窗询问） |
+| SWD / JTAG 高时钟频率稳定性 | ✅ | ✅ | ✅ | ✅ | ❌ （不同版本稳定性差异较大，测试使用的 `V8.74` 版本设置 `50 MHz` SWD 时钟会发生崩溃） |
+| RTT 模式高频采样率稳定性 | ✅ | ✅ | ✅ | ✅ | ❌ （丢包时易发生崩溃） |
 | RTT 模式丢包特殊处理<sup>2</sup> | ✅ | ✅ | ✅ | ✅ | ❌ （丢包时数据出现极值，波形错乱充满示波区域，有迷惑性） |
 | 变量快捷搜索筛选 | ✅ | ✅ | ✅ | ✅ | ✅ （需要独立弹窗打开，较为不便） |
-| ELF/AXF/OUT 符号文件解析速度 | 超快 | 超快 | 超快 | 超快 | 慢 |
-| 符号文件编程语言支持 | C / C++ / Rust | C / C++ / Rust | C / C++ / Rust | C / C++ / Rust | C / C++ / Rust |
-| 符号文件工具链支持 | ARMCC / ARMCLANG / IAR / GCC / clang LLVM rustc | ARMCC / ARMCLANG / IAR / GCC / clang LLVM rustc | ARMCC / ARMCLANG / IAR / GCC / clang LLVM rustc | ARMCC / ARMCLANG / IAR / GCC / clang LLVM rustc | ARMCC / ARMCLANG / IAR / GCC / clang LLVM rustc |
-| 变量在线修改 | ✅ | ✅ | ✅ | ✅ | ❌ |
+| ELF/AXF/OUT 符号文件**解析速度**<sup>③</sup> | 11x **超快** | 11x **超快** | 11x **超快** | 11x **超快** | 1x 慢 |
+| ELF/AXF/OUT 符号文件解析**完整性** | 完整 | 完整 | 完整 | 完整 | 完整 |
+| ELF/AXF/OUT 符号文件解析**准确性** | 准确 | 准确 | 准确 | 准确 | 基本准确（部分类型的解析存在问题，比如多维数组，不同编译器解析结果行为表现不同） |
+| ELF/AXF/OUT 符号文件编程语言支持 | C / C++ / Rust | C / C++ / Rust | C / C++ / Rust | C / C++ / Rust | C / C++ / Rust |
+| ELF/AXF/OUT 符号文件工具链支持 | ARMCC / ARMCLANG / IAR / GCC / clang LLVM rustc | ARMCC / ARMCLANG / IAR / GCC / clang LLVM rustc | ARMCC / ARMCLANG / IAR / GCC / clang LLVM rustc | ARMCC / ARMCLANG / IAR / GCC / clang LLVM rustc | ARMCC / ARMCLANG / IAR / GCC / clang LLVM rustc |
+| 变量滑动平均窗口大小自定义 | ✅ | ✅ | ✅ | ✅ | ❌ |
+| **变量在线修改** | ✅ | ✅ | ✅ | ✅ | ❌ |
 | 波形触发功能 | ❌ | ❌ | ❌ | ❌ | ✅ |
 | 波形数据回放 | ❌ | ❌ | ❌ | ❌ | ✅ |
 | 波形颜色自定义 | ❌ | ❌ | ❌ | ❌ | ✅ |
@@ -101,13 +106,13 @@
 | 独立的采样使能 | ✅ | ✅ | ✅ | ✅ | ❌ |
 | 独立的波形使能 | ✅ | ✅ | ✅ | ✅ | ✅ |
 | 变量别名 | ✅ | ✅ | ✅ | ✅ | ❌ |
-| 变量公式计算（支持 Javascript Math 表达式） | ✅ | ✅ | ✅ | ✅ | ❌ |
+| **变量公式计算（支持 Javascript Math 表达式）** | ✅ | ✅ | ✅ | ✅ | ❌ |
 | 最小值、最大值、滑动平均值 | ✅ | ✅ | ✅ | ✅ | ✅ |
 | 2D 示波图 - 单图模式 | ✅ | ✅ | ✅ | ✅ | ✅ |
-| 2D 示波图 - 多图模式 | ✅ | ✅ | ✅ | ✅ | ❌ |
+| 2D 示波图 - **多图模式** | ✅ | ✅ | ✅ | ✅ | ❌ |
 | 2D 示波图 - 单 / 多图模式 - X/Y 轴游标测量 | ✅ | ✅ | ✅ | ✅ | ✅ （仅支持 X 轴游标测量） |
 | 2D 示波图 - 单 / 多图模式 - 滚动模式 | ✅ | ✅ | ✅ | ✅ | ✅ |
-| 2D 示波图 - 单 / 多图模式 - 扫描模式 | ✅ | ✅ | ✅ | ✅ | ❌ |
+| 2D 示波图 - 单 / 多图模式 - **扫描模式** | ✅ | ✅ | ✅ | ✅ | ❌ |
 | 3D 示波图 | ✅ | ✅ | ✅ | ✅ | ❌ |
 | 3D 图形 | ✅ | ✅ | ✅ | ✅ | ❌ |
 | 示波器主题切换 | ✅ | ✅ | ✅ | ✅ | ❌ |
@@ -117,6 +122,8 @@
 > <sup>①</sup> J-Link / J-Trace 专版优化：`J-Trace Cortex-M PRO V2` RTT 模式最高采样率实测可达 `2.1 MB/s`（单帧 10 个变量无时间戳合计 29 字节，每秒采样 `74K` 次）。
 >
 > <sup>②</sup> 多调试器广泛支持：DAP-Link / ST-Link V2/V3 / J-Link / Black Magic / FTDI（Olimex ARM-USB 系列调试器）/ WCH-Link / CH347usbjtag / Glasgow Interface Explorer 等。
+>
+> <sup>③</sup> ELF/AXF/OUT 符号文件解析速度：本系列软件对符号文件内的调试信息解析速度比 JScope 快 **11** 倍（使用同一个大型 ELF 文件测试，本系列软件 `4s` 解析完成，JScope `44s` 解析完成）。
 
 ### 1. 采样模式
 
