@@ -4,9 +4,6 @@ on:
   release:
     types: [published, edited, deleted, unpublished]
 
-permissions:
-  contents: read  # 只需要读取权限，因为用的是 WEBSITE_REPO_TOKEN
-
 jobs:
   trigger:
     runs-on: ubuntu-latest
