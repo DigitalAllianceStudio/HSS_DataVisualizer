@@ -2,7 +2,13 @@ name: Trigger Website Rebuild
 
 on:
   release:
-    types: [published, edited, deleted, unpublished]
+    types: [published, edited, deleted, unpublished, prereleased, released]
+  workflow_dispatch:
+    inputs:
+      version:
+        description: 'Release version tag (e.g. v1.0.0)'
+        required: false
+        default: 'latest'
 
 jobs:
   trigger:
@@ -13,12 +19,15 @@ jobs:
         with:
           github-token: ${{ secrets.WEBSITE_REPO_TOKEN }}
           script: |
+            const version = context.payload.release
+              ? context.payload.release.tag_name
+              : (context.payload.inputs?.version || 'latest');
             await github.rest.repos.createDispatchEvent({
               owner: 'SummerFalls',
               repo: 'da-soft-hub',
               event_type: 'rebuild',
               client_payload: {
                 repo: context.repo.repo,
-                version: context.payload.release.tag_name
+                version: version
               }
             });
