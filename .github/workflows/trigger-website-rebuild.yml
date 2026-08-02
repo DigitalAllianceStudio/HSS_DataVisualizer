@@ -1,0 +1,24 @@
+name: Trigger Website Rebuild
+
+on:
+  release:
+    types: [published]
+
+jobs:
+  trigger:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Trigger da-soft-hub rebuild
+        uses: actions/github-script@v7
+        with:
+          github-token: ${{ secrets.WEBSITE_REPO_TOKEN }}
+          script: |
+            await github.rest.repos.createDispatchEvent({
+              owner: 'SummerFalls',
+              repo: 'da-soft-hub',
+              event_type: 'rebuild',
+              client_payload: {
+                repo: context.repo.repo,
+                version: context.payload.release.tag_name
+              }
+            });
