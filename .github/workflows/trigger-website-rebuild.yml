@@ -2,7 +2,7 @@ name: Trigger Website Rebuild
 
 on:
   release:
-    types: [published]
+    types: [published, edited, deleted, unpublished]
 
 jobs:
   trigger:
