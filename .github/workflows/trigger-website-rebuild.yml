@@ -3,6 +3,7 @@ name: Trigger Website Rebuild
 on:
   release:
     types: [published, edited, deleted, unpublished]
+  workflow_dispatch:
 
 jobs:
   trigger:
