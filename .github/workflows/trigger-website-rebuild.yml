@@ -3,7 +3,9 @@ name: Trigger Website Rebuild
 on:
   release:
     types: [published, edited, deleted, unpublished]
-  workflow_dispatch:
+
+permissions:
+  contents: read  # 只需要读取权限，因为用的是 WEBSITE_REPO_TOKEN
 
 jobs:
   trigger:
