@@ -6,6 +6,8 @@
 
 <p><i>High-Speed-Sampling (HSS) · Real-Time-Transfer (RTT) · 2D / 3D 实时示波</i></p>
 
+<a target="_blank" href="https://silixworks.com"><img alt="silixworks.com" src="doc/favicon-32x32.png" style="vertical-align: middle; margin-right: 8px;">silixworks.com</a>
+
 <p>
   <img alt="version" src="https://img.shields.io/badge/version-v1.0.3.0-2ea44f?style=flat-square">
   <img alt="platform" src="https://img.shields.io/badge/platform-Windows%20x64-0078D6?style=flat-square&logo=windows&logoColor=white">
