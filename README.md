@@ -9,7 +9,7 @@
 <a target="_blank" href="https://silixworks.com"><img alt="silixworks.com" src="doc/favicon-32x32.png" style="vertical-align: middle; margin-right: 8px;">silixworks.com</a>
 
 <p>
-  <img alt="version" src="https://img.shields.io/badge/version-v1.0.3.1-2ea44f?style=flat-square">
+  <img alt="version" src="https://img.shields.io/badge/version-v1.0.4.0-2ea44f?style=flat-square">
   <img alt="platform" src="https://img.shields.io/badge/platform-Windows%20x64-0078D6?style=flat-square&logo=windows&logoColor=white">
   <a title="Hits" target="_blank" href="https://github.com/DigitalAllianceStudio/HSS_DataVisualizer"><img alt="hits" src="https://hits.b3log.org/DigitalAllianceStudio/HSS_DataVisualizer.svg"></a>
 </p>
@@ -41,7 +41,7 @@
 </div>
 
 > [!NOTE]
-> 本仓库用于 HSS_DataVisualizer & UNI_DataVisualizer 的发布，当前版本：**v1.0.3.1**。下载请跳转程序发布页面 [GitHub](https://github.com/DigitalAllianceStudio/HSS_DataVisualizer/releases/latest) 或 [Gitee](https://gitee.com/tomystark/DataVisualizer-Release/releases/latest)。
+> 本仓库用于 HSS_DataVisualizer & UNI_DataVisualizer 的发布，当前版本：**v1.0.4.0**。下载请跳转程序发布页面 [GitHub](https://github.com/DigitalAllianceStudio/HSS_DataVisualizer/releases/latest) 或 [Gitee](https://gitee.com/tomystark/DataVisualizer-Release/releases/latest)。
 
 > [!TIP]
 > :question: 使用 Texas Instruments 的芯片（例如 `TMS320F28035` 以及国产 1:1 替代芯片，例如湖南进芯的 DSP `ADP32F035`，以及 `MSP430` 等...）和 `XDS100v3`、`XDS110`、`XDS560v2 Plus` 等调试器？
