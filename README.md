@@ -9,7 +9,7 @@
 <a target="_blank" href="https://silixworks.com"><img alt="silixworks.com" src="doc/favicon-32x32.png" style="vertical-align: middle; margin-right: 8px;">silixworks.com</a>
 
 <p>
-  <img alt="version" src="https://img.shields.io/badge/version-v1.0.4.0-2ea44f?style=flat-square">
+  <img alt="version" src="https://img.shields.io/badge/version-v1.0.5.1-2ea44f?style=flat-square">
   <img alt="platform" src="https://img.shields.io/badge/platform-Windows%20x64-0078D6?style=flat-square&logo=windows&logoColor=white">
   <a title="Hits" target="_blank" href="https://github.com/DigitalAllianceStudio/HSS_DataVisualizer"><img alt="hits" src="https://hits.b3log.org/DigitalAllianceStudio/HSS_DataVisualizer.svg"></a>
 </p>
@@ -41,7 +41,7 @@
 </div>
 
 > [!NOTE]
-> 本仓库用于 HSS_DataVisualizer & UNI_DataVisualizer 的发布，当前版本：**v1.0.4.0**。下载请跳转程序发布页面 [GitHub](https://github.com/DigitalAllianceStudio/HSS_DataVisualizer/releases/latest) 或 [Gitee](https://gitee.com/tomystark/DataVisualizer-Release/releases/latest)。
+> 本仓库用于 HSS_DataVisualizer & UNI_DataVisualizer 的发布，当前版本：**v1.0.5.1**。下载请跳转程序发布页面 [GitHub](https://github.com/DigitalAllianceStudio/HSS_DataVisualizer/releases/latest) 或 [Gitee](https://gitee.com/tomystark/DataVisualizer-Release/releases/latest)。
 
 > [!TIP]
 > :question: 使用 Texas Instruments 的芯片（例如 `TMS320F28035` 以及国产 1:1 替代芯片，例如湖南进芯的 DSP `ADP32F035`，以及 `MSP430` 等...）和 `XDS100v3`、`XDS110`、`XDS560v2 Plus` 等调试器？
@@ -102,7 +102,7 @@
 | 变量滑动平均窗口大小自定义 | ✅ | ✅ | ✅ | ✅ | ❌ |
 | **变量在线修改** | ✅ | ✅ | ✅ | ✅ | ❌ |
 | 波形触发功能 | ❌ | ❌ | ❌ | ❌ | ✅ |
-| 波形数据回放 | ❌ | ❌ | ❌ | ❌ | ✅ |
+| 波形数据回放 | ❌ | ✅ | ❌ | ✅ | ✅ |
 | 波形颜色自定义 | ❌ | ❌ | ❌ | ❌ | ✅ |
 | 波形 Y 轴缩放、偏移<sup>3</sup> | ❌ | ❌ | ❌ | ❌ | ✅ |
 | 独立的采样使能 | ✅ | ✅ | ✅ | ✅ | ❌ |
@@ -171,7 +171,7 @@ RTT 模式下 MCU 高频发包时，对于低端 J-Link 的丢包情况进行了
 
 ### 3. 波形 Y 轴缩放、偏移
 
-未来计划新增 `2D 示波图 - 单图模式（增益偏移模式）`，当前对于多个波形可用 `2D 示波图 - 多图模式` 观测波形（多个波形图拥有各自独立的 Y 轴坐标系）。
+本系列软件对于多个波形可用 `2D 示波图 - 多图模式` 作为替代（多个波形图拥有各自独立的 Y 轴坐标系），相比单图Y轴缩放+偏移的方式更有区分度，更便于阅读和观察。
 
 ---
 
@@ -222,6 +222,7 @@ RTT 模式下 MCU 高频发包时，对于低端 J-Link 的丢包情况进行了
 
 ![专业版05](doc/专业版05.png)
 ![专业版06](doc/专业版06.png)
+![CSV波形回放](doc/CSV波形回放.png)
 
 ### 标准版
 
